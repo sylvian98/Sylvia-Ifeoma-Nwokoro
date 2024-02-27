@@ -68,6 +68,11 @@ svg#home-anim {
   clip-path: url(#cache);
 }
 
+li{
+    color: #fff;
+    line-height: 150%;
+    letter-spacing: 5%;
+}
 
 
 #blue {
