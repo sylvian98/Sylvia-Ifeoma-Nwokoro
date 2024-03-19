@@ -648,6 +648,9 @@ span.notes{
     .welcome{
         top: -20%;
     }
+    .services{
+        grid-template-columns: 1fr;
+    }
     
 }
 @media only screen and (min-width : 600px) and (max-width: 1024px){
