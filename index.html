@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap" rel="stylesheet">
 <title>
     
     Sylvia Ifeoma Nwokoro Portfolio
@@ -33,29 +40,33 @@
         </div>
         </div>
 -->
-       <script>
-               let isSticky = false;
+      
+
+<script>
+    let isSticky = false;
 
     window.addEventListener('scroll', () => {
       if (window.scrollY > 0) {
         if (!isSticky) {
           jQuery('header').css('position', 'fixed');
-
           isSticky = true;
         }
       } else {
         jQuery('header').css('position', 'absolute');
-
         isSticky = false;
       }
     });
-function openNav() {
-  document.getElementById("myNav").style.width = "50%";
-}
 
-function closeNav() {
-  document.getElementById("myNav").style.width = "0%";
-}
+    function openNav() {
+      document.getElementById("myNav").style.width = "50%";
+      if (window.innerWidth <= 768) { // Check if viewport width is less than or equal to 768px (mobile)
+        document.getElementById("myNav").style.width="100%" // Add full-width class to openbtn
+      }
+    }
+
+    function closeNav() {
+      document.getElementById("myNav").style.width = "0%";
+    }
 </script>
     </header>
     
@@ -68,11 +79,22 @@ function closeNav() {
 	<div class="bg-animation">
         <section class="container">
             <div class="intro">
-	
-                <h1 class="name"> 	<p class="welcome">
-Welcome to my portfolio,
-		</p> My name is Sylvia Ifeoma Nwokoro, <br>  and I'm a <span style="color: #5653CE;">Designer</span>.</h1> 
+                <p class="welcome">
+                Hi there</p>
+                <h1 class="name"> I'm Sylvia , a </h1>
+                <b class="rotating"> 
+                <span class="job-title" style="color: #535C91;"> UX/UI/Web Designer.</span><br>
+  <span class="job-title" style="color: #535C91;">Wordpress Developer.</span><br>
+  <span class="job-title" style="color: #535C91;">Website Analyst Specialist.</span>
+                
+                
+                </b>
+                
+        
+             
+            
             </div>
+            
         </section>
 		<svg version="1.1" id="home-anim" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 1820 1080" style="enable-background:new 0 0 1820 1080;" xml:space="preserve">
@@ -156,7 +178,7 @@ Welcome to my portfolio,
 </svg>
 		</div>
 	</div>
-   
+   <div class="bg">
         
     <section class="container">
     
@@ -167,14 +189,25 @@ Welcome to my portfolio,
                 <h3 class="about-title"> About Me </h3>
                 <p class="about-content">
                 
-      Hey there! I'm Sylvia, a passionate WordPress Web Designer/Developer and UI Designer currently shaping digital experiences at Hadean, a dynamic start-up in the ever-evolving realm of the Metaverse.
+     Hey there! I'm Sylvia, a dedicated UX/UI Web Designer and Analyst Specialist, currently crafting digital experiences at Hadean, a dynamic start-up in the ever-evolving realm of the Metaverse.
+<br><br>
+My journey in web design began during my final year at University. Creating an E-learning gaming website ignited my passion for transforming blank screens into captivating interfaces.
+Since joining Hadean, I've honed my coding and design skills while immersing myself in the fast-paced world of tech and design innovation. I firmly believe in the transformative power of elegant design to forge lasting impressions. Each project I undertake is infused with creativity, functionality, and a steadfast commitment to user-centric design principles.
                     <br><br>
-My web design journey began during my final year at University. Creating an E-learning gaming website ignited my passion for turning blank screens into engaging interfaces.
-Since working at Hadean, I've sharpened my coding and design skills while diving into the fast-paced world of tech and design innovation. I believe in the power of beautiful design to create memorable experiences. Each project is infused with creativity, functionality, and user-centric design principles.
-                    <br><br>
-<b>Let's Connect</b>
+<b>Let's Connect</b><br>
 Ready to elevate your online presence or craft immersive digital experiences? 
 Let's collaborate and bring your vision to life.
+                    <br><br>
+                     <a href="mailto:nwokorosylvia88@gmail.com">
+         <img class="icon2" src="images/noun-email-6213748-FFFFFF.png">
+                  </a> 
+<a href="tel:07759687674">
+         <img class="icon2" src="images/noun-phone-6213762-FFFFFF.png" >
+                  </a>
+  <a href="https://www.linkedin.com/in/sylvia-ifeoma-nwokoro-9ab893173/" target="_blank">
+         <img class="icon2" src="images/linkedin%20logo.png">
+                  
+                   </a>
                 </p>
             
             </div>
@@ -182,7 +215,7 @@ Let's collaborate and bring your vision to life.
             <div class="content-logos" id="codes">
 <!--                add float animation-->
                 <h3 class="logo-code" id="html" id="floating"> HTML</h3>
-                
+                <h3 class="logo-code" id="css"> CSS </h3>
                 <h3 class="logo-code" id="php"> PHP </h3>
                 
                 <h3 class="logo-code" id="react"> Wordpress </h3>
@@ -206,11 +239,63 @@ Let's collaborate and bring your vision to life.
     
     </div>
     </section>
+     </div>
+     
+      <section class="container" id="padding">
+          <h2> My Services</h2>
+         <div class="services">
+            <div class="services-content">
+             <div class="rectangle">   <p class="number">
+                01
+                </p></div>
+           
+                <h4> UX/UI Designs</h4>
+                <p> With your branding, ideas, and references, I can create a mock-up prototype that showcases what the final outcome will look like—a design that you and your audience will love. <br><span class="notes"> Wireframes and prototypes are crafted using Figma, ensuring a seamless and collaborative design process.</span></p>
+             
+             </div>
+             
+             <div class="services-content">
+              <div class="rectangle">   <p class="number">
+                02
+                </p></div>
+                <h4> Development</h4>
+             
+             <p> I specialize in bringing websites to life using a variety of platforms including WordPress, Webflow, Squarespace, Google Sites, and more. Whatever your preferred platform, I'll ensure your website not only looks stunning but also functions seamlessly to meet your needs.</p>
+             </div>
+             
+             <div class="services-content">
+             <div class="rectangle">   <p class="number">
+                03
+                </p></div>
+                <h4> Analyst  Specialist</h4>
+             <p>After launching your website, it's crucial to address SEO and gauge audience engagement. Using tools like HubSpot reporting, SemRush, Google Analytics, and Hotjar, I'll create detailed dashboards to highlight high-performing areas. This data-driven approach enhances website performance and user experience.</p>
+             
+             </div>
+         
+         
+         
+         
+         </div>
      
      
      
-     <div class="blue-bg">
-     <section class="container" style="background:#1e1e1e;" id="uiwork">
+     
+     
+     
+     
+     </section>
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+   <div class="bg">
+     <section class="container">
      <div class="ui-work">
      <div class="ui-designer-content">
          <h2 class="about-title"> Web UI Designs</h2>
@@ -222,61 +307,132 @@ Here are a few examples of my recent projects, all crafted meticulously using Fi
          
          </div>
          
-         <div class="work-grid">
+         </div>
          
-         <div class="work-content">
-             <a href="https://drive.google.com/file/d/19l3jhM3gi0fde1kPe79KJxXZdwAJUmLL/view" target="_blank">
+<!--         swiper -->
+           <div class="swiper mySwiper">
+         
+         <div class="swiper-wrapper">
+             
+             
+               <div class="swiper-slide">
+
+                <a href="images/Casestudies-compressed.pdf" target="_blank">
              <div class="images" id="zoom">
-             <img class="grid-figma" src="images/defencehadean.png">
+             <img src="images/casestudies.png">
                   <h3 class="work-title">
-                     Hadean UI Designs 
+                     Hadean Case Studies Template
                  </h3>
              </div>
                  
+                 </a>
              
-             </a>
-
-             
+      
              </div>
-                 <div class="work-content">
-             <a href="images/Sylvia%20Portfolio%20plan.pdf" target="_blank" >
+             
+              <div class="swiper-slide">
+
+                <a href="images/design%20plans-compressed.pdf" target="_blank">
              <div class="images" id="zoom">
-             <img class="grid-figma" src="images/portfolioimage.png">
+             <img src="images/hadean%20plans.png">
+                  <h3 class="work-title">
+                     Hadean Website Designs 
+                 </h3>
+             </div>
+                 
+                 </a>
+             
+      
+             </div>
+             
+             
+             <div class="swiper-slide">
+
+                <a href="https://drive.google.com/file/d/19l3jhM3gi0fde1kPe79KJxXZdwAJUmLL/view" target="_blank">
+             <div class="images" id="zoom">
+             <img src="images/defencehadean.png">
+                  <h3 class="work-title">
+                     Hadean UI Designs
+                 </h3>
+             </div>
+                 
+                 </a>
+             
+      
+             </div>
+             
+             <div class="swiper-slide">
+
+              <a href="images/Sylvia%20Portfolio%20plan.pdf" target="_blank" >
+             <div class="images" id="zoom">
+             <img src="images/portfolioimage.png">
                   <h3 class="work-title">
                     Portfolio Plan 
                  </h3>
              </div>
                  
+                 </a>
              
-             </a>
-
-             
+      
              </div>
-		 
-                 <div class="work-content">
-             <a href="images/Web%201920%20%E2%80%93%201%20(1).jpg" target="_blank">
+             
+             
+        <div class="swiper-slide">
+
+            <a href="images/Web%201920%20%E2%80%93%201%20(1).jpg" target="_blank">
              <div class="images" id="zoom">
-             <img class="grid-figma" src="images/figma2.png">
+             <img  src="images/m-connect.png">
                   <h3 class="work-title">
-                    H-Connect 
+                    M-Connect 
                  </h3>
              </div>
                  
+                 </a>
              
-             </a>
-
-             
+      
              </div>
+       
+       
+       
+        </div>
          
+          <div class="swiper-pagination"></div>
          
          
          </div>
+        
          
-         </div>
+      
+           <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+         
+         <script>
+         var swiper = new Swiper(".mySwiper",{
+             
+             slidesPerView: 2,
+             loop: true,
+             autoplay: {
+                 delay: 2500,
+                 disableOnInteraction:true,
+             },
+             centeredSlides: true,
+             spaceBetween: 30,
+             grabCursor: true,
+             pagination: {
+                 el: ".swiper-pagination",
+                 clickable: true,
+             },
+          
+             
+         });
+         
+         
+         
+         </script>
      </section>
+
      </div>
-     
-     <section class="container" id="webdev">
+     <section class="container" id="bg">
              <div class="about-me">
      
      <div class="web-dev">
@@ -286,7 +442,7 @@ Here are a few examples of my recent projects, all crafted meticulously using Fi
          <p class="paragraph-content">
          
       While WordPress used to be a challenge for me, my time at Hadean has been transformative. I've honed my PHP skills and now confidently code fully responsive websites from scratch using WordPress and VeV, a powerful website CMS.<br><br>
-             <b>About Hadean</b>
+             <b>About Hadean</b><br>
 Hadean is a distributed compute platform empowering global organizations to harness the full potential of cross-cloud capabilities to tackle the world's most complex challenges. As a web designer at Hadean, I play a pivotal role in our digital presence.
              <br><br>
           
@@ -300,9 +456,10 @@ At Hadean, my responsibilities encompass a wide range of tasks:
                  <li>Managing and optimizing SEO strategies to enhance online visibility.</li>
            
 <br><br>
-Below you will find links to projects I have worked on:
+
          
          </p>
+              <p> Below you will find links to projects I have worked on:</p>
          <br><br>
          
          </div>
@@ -336,7 +493,7 @@ Below you will find links to projects I have worked on:
      </section>
      
      
-     <div class="blue-bg" id="graphics">
+     <div class="bg">
      
      
      <section class="container">
@@ -379,7 +536,17 @@ Below you will find links to projects I have worked on:
               <img class="grid-figma" src="images/colorpalletelogos3.png">
                   
               </div>
-
+              
+              <div class="graphic-work">
+              
+              <img class="grid-figma" src="images/banner2.png">
+                  
+              </div>
+               <div class="graphic-work">
+              
+              <img class="grid-figma" src="images/MMD.png">
+                  
+              </div>
 		  
               
              </div>
@@ -388,6 +555,11 @@ Below you will find links to projects I have worked on:
          </section>
      
      </div>
+     
+    
+     
+     
+     
      
      
      <div class="footer-color">

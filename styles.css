@@ -1,7 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap');
 
 body{
 	background-color: black;
-	font-family: Open Sans;
+	font-family: 'Bricolage Grotesque', sans-serif; 
 	
 	
 }
@@ -16,7 +17,7 @@ section.container{
 }
 .blue-bg{
     
-    background: #1e1e1e;
+    background: #070F2B;
 padding-top: 8%;
     padding-bottom: 8%;
 }
@@ -25,14 +26,18 @@ padding-top: 8%;
 
 h1{
     font-size: 80px;
-    font-weight: 300;
+    font-weight: 500;
 }
 h2{
     font-size: 50px;
-    font-weight: 300;
+    font-weight: 500;
+}
+h4{
+    font-size: 25px;
 }
 
-h1, h2, h3, p{
+
+h1, h2, h3,h4, p{
 	
 	color: white;
 }
@@ -42,22 +47,102 @@ a{
 	text-decoration: none;
 }
 
+li::marker {
+    color: #535C91; /* Change bullet point color here */
+  
+  }
+#padding{
+    padding-top: 20%;
+    padding-bottom: 20%;
+    background: url(images/blurry-gradient-haikei.png);
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#bg{
+padding-top: 5%;
+    padding-bottom: 5%;
+    background: url(images/blurry-gradient-haikei.png);
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.bg{
+     background: url(images/blurry2.png);
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    background-attachment: fixed;
+}
+
 /* home page */
 
 .intro{
     position: absolute;
-    top: 45%;
+    top: 40%;
     left: 50%;
     width: 100%;
-padding: 30px;
+padding: 100px;
     transform: translate(-50%,-50%);
     
 }
 .welcome{
-    font-size: 25px !important;
-    color:#A1A1A1; 
+    font-size: 32px;
+    color:#535C91; 
     font-weight: normal !important;
+    text-transform: uppercase;
+    top: 10%;
+    position: absolute;
+    
 }
+
+h1.name{
+    height: 50px;
+    float: left;
+    margin-bottom: 0.3em;
+}
+
+span.job-title{
+    font-size: 80px; 
+    display: inline-block;
+    position: relative;
+    white-space: nowrap;
+    top: 0;
+    left: 25px;
+    animation: move 10s ease;
+    animation-iteration-count: infinite;
+    animation-delay: 2s; 
+    height: 100px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+   
+}
+b.rotating{
+    float: left;
+    overflow: hidden;
+    position: relative;
+    height: 100px;
+    font-weight: 500;
+    top: 60px;
+  
+}
+
+@keyframes move{
+  0%  { top: 0px; }
+20% { top: -100px; }
+40% { top: -150px; }
+60% { top: -200px; }
+80% { top: -250px; }
+
+}
+
+
+
+
 .bg-animation {
     position: relative;
 }
@@ -160,14 +245,15 @@ li{
 .logo-code{
     
     font-size: 25px;
-   border: 3px solid #5653CE;
+   border: 3px solid #535C91;
+    padding: 10px;
     width: 40%;
     text-align: center;
     border-radius: 30px;
      animation-name: floating;
     animation-duration: 3s;
     animation-iteration-count: infinite;
-    font-weight: 300;
+    font-weight: 500;
 }
 
 
@@ -180,6 +266,13 @@ li{
     
     margin-left: 50%;
     top: 200;
+}
+#css{
+    position: relative;
+   
+    right: -50%;
+    top: -6%;
+   
 }
 
 #js{
@@ -206,6 +299,7 @@ li{
 
 .paragraph-content{
     font-size: 21px;
+    width: 80%;
 }
 .work-grid{
     display: grid;
@@ -229,7 +323,7 @@ li{
     width: 100%;
     text-align: center;
     position: absolute;
-    top: 80%;
+  bottom: -10%;
 }
 
 .web-links{
@@ -262,14 +356,17 @@ footer{
 }
 .footer-grid{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 100px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 50px;
     width: 100%;
         align-content: center;
     align-items: center;
 }
 .icon{
-    width: 30%;
+    width: 20%;
+}
+.icon2{
+    width:8%;
 }
 /*
 
@@ -290,7 +387,7 @@ position: fixed;
   z-index: 1;
   top: 0;
   right: 0;
-background: #1e1e1e;
+background: #070F2B;
   overflow-x: hidden;
   transition: 0.5s;
 }
@@ -377,8 +474,68 @@ header .hambuger #ham span:nth-child(3) {
 }
 
 #zoom:hover{
-     transform: scale(1.1);
+     transform: scale(1.05);
 }
+
+
+/*services*/
+
+.services{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.services-content{
+    border: 3px solid #070F2B;
+    padding: 25px;
+    cursor: default;
+    
+}
+.services-content:hover{
+background-color: #070F2B;}
+
+
+.rectangle{
+width: 30px;
+height: 3px;
+background: #535C91;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+
+p.number{
+font-size: 21px;
+    left: 50px;
+    position: relative;
+}
+span.notes{
+   font-size: 12px;
+}
+
+/*swiper*/
+.swiper{
+    width: 100%;
+    height: 100%;
+    
+}
+
+.swiper-slide{
+    padding: 0 0 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img{
+    display: block;
+    width: 100%;
+    object-fit: cover;
+}
+
 
 @media screen and (max-height: 450px) {
   .overlay a {font-size: 20px}
@@ -419,14 +576,29 @@ header .hambuger #ham span:nth-child(3) {
    p{
         font-size: 18px;
     }
-    
+     p.welcome{
+        font-size: 18px;
+    }
+    p.paragraph-content{
+        font-size: 18px;
+        width: 100%;
+    }
     h1{
-       font-size: 50px !important;
+       font-size: 32px;
         
     }
     
     h2{
-        font-size: 32px;
+        font-size: 25px;
+    }
+    h2.about-title{
+        font-size: 25px;
+    }
+    h3{
+        font-size: 25px;
+    }
+    h3.about-title{
+        font-size: 25px;
     }
     .work-grid{
         grid-template-columns: 1fr;
@@ -437,11 +609,44 @@ header .hambuger #ham span:nth-child(3) {
     }  
     
     .footer-grid{
-         grid-template-columns:  1fr 1fr;
+         grid-template-columns:  1fr 1fr 1fr;
     }
     .overlay a {
         font-size: 32px;
         width: 100%;
+    }
+    .logo-code{
+        font-size: 14px;
+    }
+     .full-width {
+        width: 100% !important; /* Set width to 100% */
+    }
+    .work-title{
+        font-size: 12px;
+        bottom: -20%;
+    }
+ 
+    .overlay .closebtn{
+        top: 0;
+        right: 0;
+    }
+    .icon{
+    width: 50%;
+}
+    span.job-title{
+        font-size: 27px;
+        left: 0;
+    }
+    
+    b.rotating{
+      
+        top: 0;
+    }
+    .intro{
+        padding: 0;
+    }
+    .welcome{
+        top: -20%;
     }
     
 }
@@ -452,6 +657,12 @@ header .hambuger #ham span:nth-child(3) {
      h1{
        font-size: 60px !important;
         
+    }
+    .intro{
+        padding: 0;
+    }
+     .welcome{
+        top: -20%;
     }
 }
 
