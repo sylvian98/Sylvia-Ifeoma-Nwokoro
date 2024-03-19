@@ -538,7 +538,7 @@ span.notes{
 
 
 @media screen and (max-height: 450px) {
-  .overlay a {font-size: 20px}
+  .overlay a {font-size: 15px}
   .overlay .closebtn {
   font-size: 40px;
   top: 15px;
@@ -651,6 +651,8 @@ span.notes{
     .services{
         grid-template-columns: 1fr;
     }
+    
+  
     
 }
 @media only screen and (min-width : 600px) and (max-width: 1024px){
