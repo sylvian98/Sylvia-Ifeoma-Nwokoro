@@ -660,7 +660,8 @@ span.notes{
     }
     .work-title{
         font-size: 12px;
-        bottom: -20%;
+        bottom: -10%;
+	padding: 5px;
     }
  
     .overlay .closebtn{
