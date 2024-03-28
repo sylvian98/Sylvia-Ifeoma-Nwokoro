@@ -11,6 +11,26 @@ body{
 	box-sizing: border-box;
 	
 }
+span.navbar{
+    width: 50px;
+    height: 2px;
+    color: #fff;
+    border: solid;
+    display: block;
+    cursor: pointer;
+  
+}
+span.navbar::after{
+  
+    width: 30px;
+    border: solid;
+    display: inline-block;
+    content: '';
+    background-color: #fff;
+    position: relative;
+    left: 30%;
+}
+
 section.container{
     padding-left: 50px;
     padding-right: 50px;
@@ -77,6 +97,9 @@ padding-top: 5%;
     padding-top: 10%;
     padding-bottom: 10%;
     background-attachment: fixed;
+}
+img{
+    width: 100%;
 }
 
 /* home page */
@@ -318,8 +341,8 @@ li{
 .work-title{
     font-size: 27px;
     font-weight: 300;
-      background-color: #000;
-    padding: 10px;
+      background-color: #535c91;
+    padding: 15px;
     width: 100%;
     text-align: center;
     position: absolute;
@@ -327,7 +350,7 @@ li{
 }
 
 .web-links{
-    border: 3px solid #5653CE;
+    border: 3px solid #535C91;
     font-size: 16px;
     text-align: center;
     text-transform: uppercase;
@@ -343,7 +366,7 @@ li{
 
 }
 .web-links:hover{
-    background: #5653CE;
+    background: #535C91;
 }
 .footer-color{
      background: #000;
@@ -376,7 +399,7 @@ header
 header{
  z-index: 100;
 position: fixed;
-    top: 5%;
+    top: 15%;
     right: 5%;
 
 }
@@ -520,11 +543,14 @@ span.notes{
 .swiper{
     width: 100%;
     height: 100%;
+     margin-left: auto;
+      margin-right: auto;
     
 }
 
 .swiper-slide{
-    padding: 0 0 50px;
+/*    padding: 0 0 50px;*/
+    height: calc((100% - 30px) / 2) !important;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -580,8 +606,12 @@ span.notes{
         font-size: 18px;
     }
     p.paragraph-content{
-        font-size: 18px;
+        font-size: 18px ;
         width: 100%;
+    }
+    p.about-content{
+        width:100%;
+        font-size: 18px !important;
     }
     h1{
        font-size: 32px;
@@ -591,6 +621,10 @@ span.notes{
     h2{
         font-size: 25px;
     }
+    .home-page {
+    padding-top: 30%;
+    padding-left: 2%;
+}
     h2.about-title{
         font-size: 25px;
     }
