@@ -71,6 +71,9 @@ li::marker {
     color: #535C91; /* Change bullet point color here */
   
   }
+p.note {
+    font-size: 12px;
+}
 #padding{
     padding-top: 20%;
     padding-bottom: 20%;
