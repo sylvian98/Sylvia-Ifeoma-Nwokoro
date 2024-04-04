@@ -71,6 +71,9 @@ li::marker {
     color: #535C91; /* Change bullet point color here */
   
   }
+video{
+    width: 100%;
+}
 p.note {
     font-size: 12px;
 }
