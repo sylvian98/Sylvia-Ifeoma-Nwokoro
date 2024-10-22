@@ -1,0 +1,101 @@
+/* Navigation mobile */
+header#mobile{
+    display: none;
+}
+span.navbar{
+    display: block;
+    cursor: pointer;
+    background-image: url('images/icons8-menu-60.png');
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+}
+header{
+    z-index: 100;
+   position: fixed;
+       top: 10%;
+       right: 5%;
+   
+   }
+   .overlay {
+     height: 100%;
+    width: 0;
+     position: fixed;
+     z-index: 1;
+     top: 0;
+     right: 0;
+   background: #000814;
+     overflow-x: hidden;
+     transition: 0.5s;
+   }
+   
+   .overlay-content {
+     position: relative;
+     top: 10%;
+     height: 100%;
+     margin-top: 30px;
+   }
+   
+   .overlay a {
+     padding: 8px;
+       font-weight: 800;
+       font-size: 50px;
+       color: white;
+     display: block;
+     transition: 0.3s;
+   }
+   a.closebtn{
+    text-decoration: none;
+   }
+   .nav-text{
+    text-decoration: NONE;
+    text-transform: uppercase;
+   }
+   .nav-text:hover{
+        color: white;
+       border: 3px solid white;
+       border-radius: 30px;
+       padding: 16px 9px;
+       width:100%;
+       text-align: center;
+   }
+   .overlay .closebtn {
+     position: absolute;
+     top: 20px;
+     right: 45px;
+     font-size: 60px;
+   }
+   header .hambuger #ham span {
+       display: block;
+       position: absolute;
+       height: 2px;
+       width: 100%;
+       background: #fff;
+       border-radius: 9px;
+       opacity: 1;
+       left: 0;
+       transform: rotate(0deg);
+       transition: .25s ease-in-out;
+       left: 20px;
+       cursor: pointer;
+       top: 20%;
+    
+   }
+   header .hambuger #ham span:nth-child(1) {
+       top: 10px;
+       transform-origin: left center;
+       cursor: pointer;
+   }
+   header .hambuger #ham span:nth-child(2) {
+       top: 19px;
+       width: 100%;
+       transform-origin: left center;
+       cursor: pointer;
+   }
+   header .hambuger #ham span:nth-child(3) {
+       top: 29px;
+       width: 100%;
+       transform-origin: left center;
+       
+       cursor: pointer;
+   }
