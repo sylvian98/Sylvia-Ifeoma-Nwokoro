@@ -1,234 +1,221 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script
+        nomodule
+        src="https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/7.6.0/polyfill.min.js"
+        crossorigin="anonymous"
+    ></script>
+    <script
+        nomodule
+        src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=Object.assign%2CElement.prototype.append%2CNodeList.prototype.forEach%2CCustomEvent%2Csmoothscroll"
+        crossorigin="anonymous"
+    ></script>
     <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap"
-      rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap"
+        rel="stylesheet"
     />
     <title>Sylvia Ifeoma Nwokoro Portfolio</title>
     <link rel="stylesheet" type="text/css" href="styles.css" />
-  </head>
-  <body>
+    <link rel="stylesheet" type="text/css" href="locomotive-scroll.css" />
+</head>
+<body>
     <!-- desktop header bar -->
-     <header id="desktop">
+    <header id="desktop">
       <div class="container">
-        <div class="navigation">
-          <a class="desktop-nav" href="#intro"> Intro</a>
-          <a class="desktop-nav" href="#services"> services </a>
-          <a class="desktop-nav" href="#projects"> Projects</a>
-          <a class="desktop-nav" href="#connect">Connect </a>
-        </div>
+          <div class="navigation">
+              <a class="desktop-nav" href="#intro"> Intro</a>
+              <a class="desktop-nav" href="#services"> Services </a>
+              <a class="desktop-nav" href="#projects"> Projects</a>
+              <a class="desktop-nav" href="#connect">Connect </a>
+          </div>
       </div>
-     </header>
-    <main id="main" class="site-main position-relative" role="main">
-      <section class="container">
-        <div class="home-page" id="intro">
-          <h1 class="title">
-            Creative Showcase: Portfolio of <br />
-            <span class="name">Sylvia Nwokoro </span>
-          </h1>
-        </div>
-      </section>
-      <section class="home-images">
-        <div class="img-flex">
-          <div class="img-intro">
-            <img class="home-img" src="images/hadean%20plans.png">
-            <a class="home-click" href="#hadean"> View Project</a>
-          </div>
-          <div class="img-intro">
-            <img class="home-img" src="images/honey.png">
-            <a class="home-click" href="https://honey.co.uk/"> View Project</a>
-          </div>
-          <div class="img-intro">
-            <img class="home-img" src="images/bluesfriheader.png">
-            <a class="home-click" href="images/blue%20safari%20plan.pdf"> View Project</a>
-          </div>
-        </div>
-      </section>
-      <section class="container">
-        <h2 id="services">Services</h2>
-        <div class="services">
-          <div class="services-content">
-            <div class="rectangle"><p class="number">01</p></div>
-            <h4>UX/UI Designs</h4>
-            <p>
-              With your branding and ideas, I create prototypes that reflect the
-              final design—ensuring a product both you and your audience will
-              love. Wireframes and prototypes are crafted using Figma, ensuring
-              a seamless and collaborative design process.
-            </p>
-          </div>
-
-          <div class="services-content">
-            <div class="rectangle"><p class="number">02</p></div>
-            <h4>Web Development</h4>
-
-            <p>
-              I specialise in bringing websites to life using a variety of
-              platforms including WordPress, Webflow, Squarespace, Google Sites,
-              and more. Whatever your preferred platform, I'll ensure your
-              website not only looks stunning but also functions seamlessly to
-              meet your needs.
-            </p>
-          </div>
-
-          <div class="services-content">
-            <div class="rectangle"><p class="number">03</p></div>
-            <h4>Analyst Specialist</h4>
-            <p>
-              After launching your website, it's crucial to address SEO and
-              gauge audience engagement. Using tools like HubSpot reporting,
-              SemRush, Google Analytics, and Hotjar, I'll create detailed
-              dashboards to highlight high-performing areas. This data-driven
-              approach enhances website performance and user experience.
-            </p>
-          </div>
-        </div>
-      </section>
-      <!-- software knowdledge -->
-       <section class="software-knowledge">
-        <div class="rectangles">
-          <div class="coding">
-            <div class="software-flex">
-              <h4> HTML</h4>
-              <h4> php</h4>
-              <h4> css</h4>
-              <h4> scss</h4>
-              <h4> Javascript</h4>
-              <h4> Wordpress</h4>
-            </div>
-          </div>
-        </div>
-      <section class="container">
-        <div class="software-content">
-            <h2> software knowdledge</h2>
-            <p class="softare-para"> With over 3 years of design experience, I bring a blend of innovation and expertise to every project. 
-                Partnering with me means accessing fresh, creative solutions tailored to elevate your brand. 
-                My finely-tuned skills ensure your website not only stands out but also delivers an unforgettable user experience that you'll love.</p>
-        </div>
-      </section>
-      <div class="rectangles">
-        <div class="coding">
-          <div class="software-flex">
-            <h4> figma</h4>
-            <h4> photoshop</h4>
-            <h4> Indesign</h4>
-            <h4> HubSpot</h4>
-            <h4> Adobe XD</h4>
-          </div>
-        </div>
-      </div>
-      </section>
-      <!-- Projects -->
-      <section class="container" id="projects">
-        <h2 class="projects"> Projects</h2>
-        <p class="text">To view design plans in a pdf or the website of the project click on the images.</p>
-      </section>
-      <section class="dark-bg">
-        <div class="container">
-          <div class="d-flex">
-            <div class="project-content">
-              <h4> Honey Creative</h4>
-              <p class="description"> Honey Creative is a brand agency specializing in consumer branding, company branding, and web design and development.
-                 I built the website using WordPress, and I currently work at the agency as a WordPress developer.
-              </p>
-            </div>
-            <div class="image-grid">
-              <div class="project-img">
-                <a href="https://honey.co.uk/" target="_blank">
-                <img class="oneImage" src="images/honey.png" />
-                </a>
-              </div> 
-              </div>
-            </div>
-             </div>
-        <div class="container">
-        <div class="d-flex">
-          <div class="project-content">
-            <h4 id="hadean"> Hadean</h4>
-            <p class="description"> Hadean is a UK-based scale-up solving complex challenges by merging physical and virtual worlds. 
-              I led the website redesign and maintenance, improving user experience and engagement through strategic enhancements.
-            </p>
-          </div>
-          <div class="image-grid">
-            <div class="project-img">
-              <a href="images/Hadean%20User%20Journey.pdf" target="_blank">
-              <img class="projectImg" src="images/userjourney.png" />
-              </a>
-            </div>
-            <div class="project-img">
-              <a href="images/design%20plans-compressed.pdf" target="_blank">
-              <img class="projectImg" src="images/hadean%20plans.png" />
-              </a>
-            </div>
-           
-            </div>
-          </div>
-           </div>
-      </section>
-      <section class="container">
-        <div class="graphic-design">
-          <h2 class="about-title">Graphic design</h2>
-          <p>
-            As a side project I got into graphic design, I took on a few
-            projects such as creating logos and posters. <br />
-            Heres a few examples of my work.
-          </p>
-        </div>
-        <div class="graphic-grid">
-          <div class="graphic-work">
-            <img class="grid-figma" src="images/logo.png" />
-          </div>
-          <div class="graphic-work">
-            <img class="grid-figma" src="images/Aylystic4.jpg" />
-          </div>
-          <div class="graphic-work">
-            <img class="grid-figma" src="images/image%20poster.png" />
-          </div>
-          <div class="graphic-work">
-            <img class="grid-figma" src="images/colorpalletelogos3.png" />
-          </div>
-          <div class="graphic-work">
-            <img class="grid-figma" src="images/MMD.png" />
-          </div>
-          <div class="graphic-work">
-            <img class="grid-figma" src="images/skaester_2.gif" />
-          </div>
-          <div class="graphic-work">
-            <img class="grid-figma" src="images/banner2.png" alt="Hadean Banner">
-          </div>
-        </div>
-        <br> <br>
-      </section>
-
-      <footer>
-        <section class="container">
-          <div class="footer-info" id="connect">
-            <h2 class="connect">CONNECT</h2>
-            <a class="footer-link" href="mailto:nwokorosylvia88@gmail.com">
-              <p>Email: nwokorosylvia88@gmail.com</p>
-            </a>
-            <a class="footer-link" href="tel:07759687674">
-              <p>Phone: 07759687674</p>
-            </a>
-            <a
-              class="footer-link"
-              href="https://www.linkedin.com/in/sylvia-ifeoma-nwokoro-9ab893173/"
-              target="_blank"
-            >
-              <p>Linkedin</p>
-            </a>
-          </div>
-        </section>
-      </footer>
-    </main>
-  </body>
+  </header>
+    <div data-scroll-container>
+        <main id="main" class="site-main position-relative" role="main">
+            <section class="container">
+                <div class="home-page" id="intro">
+                    <h1 class="title">
+                        Creative Showcase: Portfolio of <br />
+                        <span class="name">Sylvia Nwokoro </span>
+                    </h1>
+                </div>
+            </section>
+            <section class="home-images">
+                <div class="img-flex">
+                    <div class="img-intro">
+                        <img class="home-img" src="images/hadean%20plans.png" />
+                        <a class="home-click" href="#hadean"> View Project</a>
+                    </div>
+                    <div class="img-intro">
+                        <img class="home-img" src="images/honey.png" />
+                        <a class="home-click" href="https://honey.co.uk/"> View Project</a>
+                    </div>
+                    <div class="img-intro">
+                        <img class="home-img" src="images/bluesfriheader.png" />
+                        <a class="home-click" href="images/blue%20safari%20plan.pdf"> View Project</a>
+                    </div>
+                </div>
+            </section>
+            <section class="container" id="padding">
+                <h2 id="services">Services</h2>
+                <div class="services">
+                    <div class="services-content">
+                        <div class="rectangle"><p class="number">01</p></div>
+                        <h4 class="title-h4">UX/UI Designs</h4>
+                        <p>With your branding and ideas, I create prototypes that reflect the final design—ensuring a product both you and your audience will love. Wireframes and prototypes are crafted using Figma, ensuring a seamless and collaborative design process.</p>
+                    </div>
+                    <div class="services-content">
+                        <div class="rectangle"><p class="number">02</p></div>
+                        <h4 class="title-h4">Web Development</h4>
+                        <p>I specialise in bringing websites to life using a variety of platforms including WordPress, Webflow, Squarespace, Google Sites, and more. Whatever your preferred platform, I'll ensure your website not only looks stunning but also functions seamlessly to meet your needs.</p>
+                    </div>
+                    <div class="services-content">
+                        <div class="rectangle"><p class="number">03</p></div>
+                        <h4 class="title-h4">Analyst Specialist</h4>
+                        <p>After launching your website, it's crucial to address SEO and gauge audience engagement. Using tools like HubSpot reporting, SemRush, Google Analytics, and Hotjar, I'll create detailed dashboards to highlight high-performing areas. This data-driven approach enhances website performance and user experience.</p>
+                    </div>
+                </div>
+            </section>
+            <!-- software knowledge -->
+            <section class="software-knowledge">
+                <div class="rectangles">
+                    <div class="coding">
+                        <div class="software-flex" data-scroll data-scroll-direction="horizontal" data-scroll-speed="4">
+                            <h4>Google sites</h4>
+                            <h4>Elementor</h4>
+                            <h4>HTML</h4>
+                            <h4>PHP</h4>
+                            <h4>CSS</h4>
+                            <h4>SCSS</h4>
+                            <h4>JavaScript</h4>
+                            <h4>WordPress</h4>
+                            <h4>phpMyAdmin</h4>
+                            <h4>Bitbucket</h4>
+                            <h4>Github</h4>
+                        </div>
+                    </div>
+                </div>
+                <section class="container">
+                    <div class="software-content">
+                        <h2>Software Knowledge</h2>
+                        <p class="software-para">With over 3 years of design experience, I bring a blend of innovation and expertise to every project. 
+                          Partnering with me means accessing fresh, creative solutions tailored to elevate your brand. 
+                          My skills ensure your website not only stands out but also delivers an unforgettable user experience that you'll love.</p>
+                    </div>
+                </section>
+                <div class="rectangles">
+                    <div class="coding">
+                        <div class="software-flex"data-scroll data-scroll-direction="horizontal" data-scroll-speed="-4">
+                            <h4>Photoshop</h4>
+                            <h4>InDesign</h4>
+                            <h4>Figma</h4>
+                            <h4>HubSpot</h4>
+                            <h4>Adobe XD</h4>
+                            <h4>Google Analytics</h4>
+                            <h4>Hotjar</h4>
+                            <h4>Google console</h4>
+                            <h4>SEMrush</h4>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Projects -->
+            <section class="container" id="projects">
+                <h2 class="projects">Projects</h2>
+                <p class="text">To view design plans in a pdf or the website of the project click on the images.</p>
+            </section>
+            <section class="dark-bg">
+                <div class="container">
+                    <div class="d-flex">
+                        <div class="project-content">
+                            <h4>Honey Creative</h4>
+                            <p class="description">Honey Creative is a brand agency specializing in consumer branding, company branding, and web design and development. I built the website using WordPress, and I currently work at the agency as a WordPress developer.</p>
+                        </div>
+                        <div class="image-grid">
+                            <div class="project-img">
+                                <a href="https://honey.co.uk/" target="_blank">
+                                    <img class="oneImage" src="images/honey.png" />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="d-flex">
+                        <div class="project-content">
+                            <h4 id="hadean">Hadean</h4>
+                            <p class="description">Hadean is a UK-based scale-up solving complex challenges by merging physical and virtual worlds. I led the website redesign and maintenance, improving user experience and engagement through strategic enhancements.</p>
+                        </div>
+                        <div class="image-grid">
+                            <div class="project-img">
+                                <a href="images/Hadean%20User%20Journey.pdf" target="_blank">
+                                    <img class="projectImg" src="images/userjourney.png" />
+                                </a>
+                            </div>
+                            <div class="project-img">
+                                <a href="images/design%20plans-compressed.pdf" target="_blank">
+                                    <img class="projectImg" src="images/hadean%20plans.png" />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="container">
+                <div class="graphic-design">
+                    <h2 class="about-title">Graphic Design</h2>
+                    <p>As a side project I got into graphic design, I took on a few projects such as creating logos and posters. <br /> Here are a few examples of my work.</p>
+                </div>
+                <div class="graphic-grid">
+                    <div class="graphic-work"><img class="grid-figma" src="images/logo.png" /></div>
+                    <div class="graphic-work"><img class="grid-figma" src="images/Aylystic4.jpg" /></div>
+                    <div class="graphic-work"><img class="grid-figma" src="images/image%20poster.png" /></div>
+                    <div class="graphic-work"><img class="grid-figma" src="images/colorpalletelogos3.png" /></div>
+                    <br><br>
+                </div>
+            </section>
+            <footer>
+              <section class="container">
+                <div class="footer-info" id="connect">
+                  <h2 class="connect">CONNECT</h2>
+                  <a class="footer-link" href="mailto:nwokorosylvia88@gmail.com">
+                    <p>Email: nwokorosylvia88@gmail.com</p>
+                  </a>
+                  <a class="footer-link" href="tel:07759687674">
+                    <p>Phone: 07759687674</p>
+                  </a>
+                  <a
+                    class="footer-link"
+                    href="https://www.linkedin.com/in/sylvia-ifeoma-nwokoro-9ab893173/"
+                    target="_blank"
+                  >
+                    <p>Linkedin</p>
+                  </a>
+                </div>
+              </section>
+            </footer>
+        </main>
+    </div>
+    <script src="locomotive-scroll.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+          if(window.innerWidth > 768){
+            const scroll = new LocomotiveScroll({
+                el: document.querySelector('[data-scroll-container]'),
+                smooth: true
+            });
+          }
+        });
+    </script>
+</body>
 </html>
+
