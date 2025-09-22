@@ -56,17 +56,17 @@
     justify-content: space-between;
     align-items: center;
     img {
-      width: 180px;
+      width: 100px;
     }
     .mobile-burger-menu{
      img{
-      width: 40px;
+      width: 30px;
      }
     }
     .close-btn{
       display: none;
       img{
-        width: 40px;
+        width: 30px;
        }
     }
   }
@@ -86,7 +86,7 @@
       left: 50%;
       transform: translate(-50%, -50%);
       li{
-        font-size: 70px;
+        font-size: 60px;
         a{
           text-decoration: none;
           color: $black;
