@@ -1,0 +1,19 @@
+# Node modules
+node_modules/
+
+# SCSS cache
+.sass-cache/
+
+# Build outputs
+dist/
+build/
+
+# Optional: Ignore compiled CSS if you only want to track SCSS
+*.css
+*.css.map
+
+# System files
+.DS_Store
+
+# Environment files (if using)
+.env

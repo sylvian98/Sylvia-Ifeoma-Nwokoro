@@ -1,0 +1,16 @@
+html{
+    overflow-x: hidden !important;
+}
+.button{
+    background-color: $white;
+    padding: 15px;
+    border-radius: 10px;
+    color: $Blue;
+    text-decoration: none;
+    font-family: $Elza-Black;
+    &:hover{
+        background-color: $Blue;
+        border: solid 2px $white;
+        color: $white;
+    }
+}

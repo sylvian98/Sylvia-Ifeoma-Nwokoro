@@ -1,0 +1,36 @@
+// Media screen breakpoints
+@mixin media-screen($breakpoint) {
+    @if $breakpoint == xlarge-down {
+          @media only screen and (max-width: 1400px) { @content };
+    }
+    @if $breakpoint == xxlarge-up {
+      @media only screen and (min-width: 1600px) { @content };
+  }
+    @if $breakpoint == xlarge-up {
+          @media only screen and (min-width: 1400px) { @content };
+    }
+    @if $breakpoint == large-down {
+        @media only screen and (max-width: 1200px) { @content };
+    }
+    @if $breakpoint == large-up {
+        @media only screen and (min-width: 1200px) { @content };
+    }
+    @if $breakpoint == large-only {
+      @media only screen and (min-width: 1200px) and (max-width: 1400px) { @content };
+    }
+    @if $breakpoint == medium-down {
+        @media only screen and (max-width: 768px) { @content };
+    }
+    @if $breakpoint == medium-up {
+        @media only screen and (min-width: 768px) { @content };
+    }
+    @if $breakpoint == medium-only {
+        @media only screen and (min-width: 768px) and (max-width: 1200px) { @content };
+    }
+    @if $breakpoint == small-only {
+        @media only screen and (min-width: 0px) and (max-width: 768px) { @content };
+    }
+    @if $breakpoint == extra-small-only {
+      @media only screen and (min-width: 0px) and (max-width: 350px) { @content };
+    }
+  }

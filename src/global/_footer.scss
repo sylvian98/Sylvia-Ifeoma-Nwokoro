@@ -1,0 +1,48 @@
+footer{
+    background-image: url('../images/g-background.jpg');
+    background-size: cover;
+    background-position: left;
+    height: 200px;
+    width: 100%;
+    position: relative;
+    @include media-screen(medium-down){
+        height: 150px;
+    }
+    .footer-content{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        align-content: center;
+        padding-top: 30px;
+        h2{
+            @include media-screen(large-up){
+                font-size: 50px;
+            }
+            span{
+                color: $Blue;
+            }
+        }
+        .socials{
+            ul{
+                list-style: none;
+                li{
+                    a{
+                        text-transform: uppercase;
+                        font-family: $elza-normal;
+                        font-weight: lighter;
+                        text-decoration: none;
+                        color: black;
+                        font-style: italic;
+                        font-weight: 400;
+                        &:hover{
+                            text-decoration: underline;
+                        }
+                        @include media-screen(large-up){
+                            font-size: 30px;
+                        }   
+                    }
+                }
+            }
+        }
+    }
+}

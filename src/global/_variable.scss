@@ -1,0 +1,26 @@
+//Fonts
+@font-face {
+    font-family: 'Elza';
+    src: url('../src/fonts/ElzaTrial-Black.woff');
+    font-weight: 900;
+}
+@font-face {
+    font-family: 'Elza Normal';
+    src: url('../src/fonts/ElzaTrial-Regular.woff');
+    font-weight: normal;
+}
+$elza-normal: 'Elza Normal';
+$Elza-Black: 'Elza';
+
+//Colours
+$white: #fff;
+$black: #000;
+$Blue: #7076F8;
+
+h1,h2,h3{
+font-family: $Elza-Black;
+}
+p{
+    font-family: $elza-normal;
+    font-size: 21px;
+}
