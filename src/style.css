@@ -12194,16 +12194,16 @@ p {
   align-items: center;
 }
 .mobile-navigation .mobileNav img {
-  width: 180px;
+  width: 100px;
 }
 .mobile-navigation .mobileNav .mobile-burger-menu img {
-  width: 40px;
+  width: 30px;
 }
 .mobile-navigation .mobileNav .close-btn {
   display: none;
 }
 .mobile-navigation .mobileNav .close-btn img {
-  width: 40px;
+  width: 30px;
 }
 .mobile-navigation .mobile-nav-bar {
   display: none;
@@ -12223,7 +12223,7 @@ p {
   transform: translate(-50%, -50%);
 }
 .mobile-navigation .mobile-nav-bar ul li {
-  font-size: 70px;
+  font-size: 60px;
 }
 .mobile-navigation .mobile-nav-bar ul li a {
   text-decoration: none;
