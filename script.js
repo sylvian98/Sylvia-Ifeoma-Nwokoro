@@ -37,14 +37,17 @@ window.addEventListener("scroll", () => {
 });
 //scroll trigger for work section
 document.addEventListener("DOMContentLoaded", function () {
+  let mm = gsap.matchMedia();
   gsap.registerPlugin(ScrollTrigger);
   const navigation = document.querySelector(".navigation-bar");
   const heading = document.querySelector("h1");
   const services = document.querySelectorAll(".services-content");
-  const sectionTitle = document.querySelector(".intro-title");
-  const sectionContent = document.querySelector(".content");
+  const sectionTitle = document.querySelectorAll(".intro-title > *");
+  const sectionContent = document.querySelectorAll(".content");
   const servicesBlock = gsap.utils.toArray(".services-content");
+   const workContent = document.querySelectorAll(".background > *");
   //for loop for scroll trigger
+   mm.add("(min-width:1200px)", () => {
   servicesBlock.forEach((block) => {
     gsap.from(block, {
       y: 200,
@@ -77,12 +80,20 @@ document.addEventListener("DOMContentLoaded", function () {
     x: -200,
     duration: 0.5,
     ease: "back",
-  });
+    stagger:{
+      amount:0.5,
+      each:0.2,
+    }
+  },"-=0.5");
   tl.from(sectionContent, {
     x: 200,
     duration: 0.5,
     ease: "back",
     yoyo: true,
+    stagger:{
+      each:0.2,
+      amount:0.5,
+    }
   });
   //my services block
   tl.from(services, {
@@ -95,4 +106,24 @@ document.addEventListener("DOMContentLoaded", function () {
       amount: 1, // will start within 1 second
     },
   });
+   workContent.forEach((work) =>{
+      gsap.fromTo(work,{
+        opacity:0,
+        y:100,
+        ease:"bounce"
+      },{
+        opacity:1,
+        y:0,
+        scrollTrigger:{
+          trigger:work,
+          start: "top bottom",
+        },
+        stagger:{
+          each:0.5,
+          amount:1,
+        }
+
+      })
+    })
 });
+})
