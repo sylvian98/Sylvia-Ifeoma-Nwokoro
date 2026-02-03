@@ -1,150 +1,284 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="src/style.css">
-    <script src="script.js"> </script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/style.css" />
+    <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
-    <title> Sylvia Nwokoro Portfolio </title>
-    <link rel="icon" type="image/x-icon" href="images/favicon.png">
-</head>
-<body>
+    <title>Sylvia Nwokoro Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.png" />
+  </head>
+  <body>
     <header class="navigation-bar">
-        <div class="container">
-            <div class="navbar">
-                <img src="images/sylvia-logo.png" alt="logo">
-                <div class="nav-bar">
-                    <ul>
-                        <li><a href="#services"> Intro.</a></li>
-                        <li><a href="#projects"> Projects.</a></li>
-                        <li><a href="#contact"> Contact.</a></li>
-                    </ul>
-                </div>
-            </div>
+      <div class="container">
+        <div class="navbar">
+          <a href="/"><img src="images/sylvia-logo.png" alt="logo" /></a>
+          <div class="nav-bar">
+            <ul>
+              <li><a href="#services">Intro.</a></li>
+              <li><a href="#projects">Projects.</a></li>
+              <li><a href="#contact"> Contact.</a></li>
+              <li>
+                <a href="/images/Sylvia Ifeoma Nwokoro CV.pdf" target="_blank">
+                  CV.</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
+      </div>
     </header>
     <!-- mobile-navigation -->
-     <header class="mobile-navigation">
-        <div class="container">
-            <div class="mobileNav">
-                <img src="images/sylvia-logo.png" alt="logo">
-                <div class="mobile-burger-menu">
-                    <img src="images/svgs/hamburger.png" alt="burger-icon">
-                </div>
-                <div class="close-btn">
-                    <img src="images/svgs/cross.png" alt="close-button"> 
-                </div>
-            </div>
-            <div class="mobile-nav-bar">
-                <ul>
-                    <li><a href="#services"> Intro.</a></li>
-                    <li><a href="#projects"> Projects.</a></li>
-                    <li><a href="#contact"> Contact.</a></li>
-                </ul>
-            </div>
+    <header class="mobile-navigation">
+      <div class="container">
+        <div class="mobileNav">
+          <a href="/"><img src="images/sylvia-logo.png" alt="logo" /></a>
+          <div class="mobile-burger-menu">
+            <img src="images/svgs/hamburger.png" alt="burger-icon" />
+          </div>
+          <div class="close-btn">
+            <img src="images/svgs/cross.png" alt="close-button" />
+          </div>
         </div>
-     </header>
+        <div class="mobile-nav-bar">
+          <ul>
+            <li><a href="#services">Intro.</a></li>
+            <li><a href="#projects">Projects.</a></li>
+            <li><a href="#contact">Contact.</a></li>
+            <li>
+              <a href="/images/Sylvia Ifeoma Nwokoro CV.pdf" target="_blank">
+                CV.</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
     <section class="introduction" id="intro">
-        <div class="container">
-            <h1>Partner with Me for Fresh, Creative <br> Brand Solutions </h1>
-        </div>
+      <div class="container">
+        <h1>
+          Partner with Me for Fresh, Creative <br />
+          Brand Solutions
+        </h1>
+      </div>
     </section>
     <section class="container">
-        <div class="intro-grid">
-            <div class="intro-title">
-                <h2> services.</h2>
-            </div>
-            <div class="content">
-                <p> My skills ensure your website not only stands out but also delivers an unforgettable user experience that you love.</p>
-            </div>
+      <div class="intro-grid">
+        <div class="intro-title">
+          <h2>about me.</h2>
         </div>
+        <div class="content">
+          <p>
+            I am a WordPress developer and designer with four years of
+            experience, specializing in custom themes and templates built with
+            PHP, SCSS, CSS, and JavaScript, and working with tools like
+            Elementor and WooCommerce. I create seamless websites that follow
+            SEO best practices. If you would like to collaborate on a project,
+            feel free to <a href="#contact">reach out. </a>
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="container">
+      <div class="intro-grid">
+        <div class="intro-title">
+          <h2>services.</h2>
+        </div>
+        <div class="content">
+          <p>
+            My skills ensure your website not only stands out but also delivers
+            an unforgettable user experience that you love.
+          </p>
+        </div>
+      </div>
     </section>
     <section class="container" id="services">
-        <div class="services">
-            <div class="my-services">
-                <div class="services-content">
-                    <h3> UX UI Design</h3>
-                    <p> With your branding and ideas, I will create prototypes that reflect the 
-                        final design, ensuring a product both you and your audience will love. 
-                        Wireframes and prototypes are crafted using Figma, ensuring a seamless and 
-                        collaborative design process. </p>
-                    </div>
-                    <div class="services-content">
-                        <h3> Web  development</h3>
-                        <p> Using Wordpress, VeV, Squarespace, Google sites, Webflow I can bring your website designs to life. I will ensure your website not only looks stunning but also functions seamlessly to meet your needs. </p>
-                    </div>
-                    <div class="services-content">
-                        <h3> Analytics</h3>
-                        <p> After launching your website, it is crucial to address SEO and gauge audience engagement. Using tools like HubSpot reporting, SemRush, Google Analytics, and Hotjar, I  can create detailed dashboards to highlight high-performing areas. This approach enhances website performance and user experience. </p>
-                    </div>
-            </div>
+      <div class="services">
+        <div class="my-services">
+          <div class="services-content">
+            <h3>UX UI Design</h3>
+            <p>
+              With your branding and ideas, I will create prototypes that
+              reflect the final design, ensuring a product both you and your
+              audience will love. Wireframes and prototypes are crafted using
+              Figma, ensuring a seamless and collaborative design process.
+            </p>
+          </div>
+          <div class="services-content">
+            <h3>Web development</h3>
+            <p>
+              Using Wordpress, VeV, Squarespace, Google sites, Webflow I can
+              bring your website designs to life. I will ensure your website not
+              only looks stunning but also functions seamlessly to meet your
+              needs.
+            </p>
+          </div>
+          <div class="services-content">
+            <h3>Analytics</h3>
+            <p>
+              After launching your website, it is crucial to address SEO and
+              gauge audience engagement. Using tools like HubSpot reporting,
+              SemRush, Google Analytics, and Hotjar, I can create detailed
+              dashboards to highlight high-performing areas. This approach
+              enhances website performance and user experience.
+            </p>
+          </div>
         </div>
+      </div>
     </section>
     <section class="container" id="projects">
-        <div class="background">
-            <div class="intro-title">
-                <h2> Work</h2>
-            </div>
-            <div class="work-section">
-                <img src="images/honey.png"> 
-                <div class="work-content">
-                    <h3> Honey Creative</h3>
-                    <p>
-                        Honey Creative is a brand agency specialising in consumer branding, company branding, and web design and development. The site was built the website using WordPress.
-                    </p>
-                    <a class="button" href="https://honey.co.uk/" target="_blank"> View Website</a>
-                </div>
-            </div>
-            <div class="work-section">
-                <img src="images/alpen-header.png"> 
-                <div class="work-content">
-                    <h3> Alpen</h3>
-                    <p>
-                        Alpen is a line of muesli varieties produced by the Weetabix cereal company, based in Kettering, Northamptonshire. 
-                        To align with their new packaging, I re-branded their website using existing WordPress blocks, ensuring a fresh, cohesive look that reflects the updated brand identity. 
-                    </p>
-                    <a class="button" href="https://alpen.co.uk/" target="_blank"> View Website</a>
-                </div>
-            </div>
-            <div class="work-section">
-                <img src="images/ridewise.png">
-                <div class="work-content">
-                    <h3> Ridewise pro</h3>
-                    <p>
-                      Ridewise pro is a motorcycle training center in the UK. The clients wanted a website that reflected a similar style to the <a href="https://superbikeschool.co.uk/" target="_blank"> California Superbike School </a> but with their visual identity and brand theme. This site was built using Wordpress editor and ACF Blocks allowing the clients manage and update their content.
-                    </p>
-                    <a class="button" href="https://www.ridewise.pro/" target="_blank"> View Website</a>
-                </div>
-            </div>
-            <div class="work-section">
-                <img src="images/blur.png">
-                <div class="work-content">
-                    <h3> Blue Safari</h3>
-                    <p>
-                        Blue Safari, a dynamic clothing brand, aimed to revolutionise adventure fashion by seamlessly blending style and functionality. To bring this vision to life, I developed a comprehensive UX design plan using Figma. <br><br>
-
-Since the company had a limited product range, I opted for a single landing page to showcase all available clothing. This approach ensured a clean and streamlined experience while keeping navigation simple. The client preferred a minimalist design with fewer pages, focusing on easy product discovery and a seamless purchasing process.
-                    </p>
-                    <a class="button" href="images/blue safari plan.pdf" target="_blank"> View Design</a>
-                </div>
-            </div>
+      <div class="background">
+        <div class="intro-title">
+          <h2>Work</h2>
         </div>
+        <div class="work-section">
+          <img src="images/honey.png" />
+          <div class="work-content">
+            <h3>Honey Creative</h3>
+            <p>
+              Honey Creative is a brand agency specialising in consumer
+              branding, company branding, and web design and development. The
+              site was built the website using WordPress.
+            </p>
+            <a class="button" href="https://honey.co.uk/" target="_blank">
+              View Website</a
+            >
+          </div>
+        </div>
+        <div class="work-section">
+          <img src="images/alpen-header.png" />
+          <div class="work-content">
+            <h3>Alpen</h3>
+            <p>
+              Alpen is a line of muesli varieties produced by the Weetabix
+              cereal company, based in Kettering, Northamptonshire. To align
+              with their new packaging, I re-branded their website using
+              existing WordPress blocks, ensuring a fresh, cohesive look that
+              reflects the updated brand identity.
+            </p>
+            <a class="button" href="https://alpen.co.uk/" target="_blank">
+              View Website</a
+            >
+          </div>
+        </div>
+        <div class="work-section">
+          <img src="images/Weetabix-Learn-More.png" />
+          <div class="work-content">
+            <h3>Weetabix</h3>
+            <h4><b>Learn More Page</b></h4>
+            <p>
+              While working at a design and brand agency called Honey, I was
+              responsible for maintaining and updating the Weetabix websites.
+              Honey manages a total of 21 sites, with Weetabix.com serving as
+              the main international site where users can select their preferred
+              language.
+              <br /><br />The client requested a Learn More page featuring a
+              pop-up linking to three different pages on the international site.
+              Using ACF, PHP, HTML, SCSS, and JavaScript, I built a custom page
+              template that allows users to select their spoken language from a
+              dropdown and choose which page to navigate to. The pop-up also
+              includes a close button, ensuring a smooth user experience if the
+              wrong language is selected.
+            </p>
+            <a
+              class="button"
+              href="https://weetabix.com/learn-more/"
+              target="_blank"
+            >
+              View Web Page</a
+            >
+          </div>
+        </div>
+        <div class="work-section">
+          <img src="images/ridewise.png" />
+          <div class="work-content">
+            <h3>Ridewise pro</h3>
+            <p>
+              Ridewise pro is a motorcycle training center in the UK. The
+              clients wanted a website that reflected a similar style to the
+              <a href="https://superbikeschool.co.uk/" target="_blank">
+                California Superbike School
+              </a>
+              but with their visual identity and brand theme. This site was
+              built using Wordpress editor and ACF Blocks allowing the clients
+              manage and update their content.
+            </p>
+            <a class="button" href="https://www.ridewise.pro/" target="_blank">
+              View Website</a
+            >
+          </div>
+        </div>
+        <div class="work-section">
+          <img src="images/blur.png" />
+          <div class="work-content">
+            <h3>Blue Safari</h3>
+            <p>
+              Blue Safari, a dynamic clothing brand, aimed to revolutionise
+              adventure fashion by seamlessly blending style and functionality.
+              To bring this vision to life, we developed a comprehensive UX
+              design plan using Figma. <br /><br />
+
+              Since the company had a limited product range, we opted for a
+              single landing page to showcase all available clothing. This
+              approach ensured a clean and streamlined experience while keeping
+              navigation simple. The client preferred a minimalist design with
+              fewer pages, focusing on easy product discovery and a seamless
+              purchasing process.
+            </p>
+            <a
+              class="button"
+              href="images/blue safari case study2.pdf"
+              target="_blank"
+            >
+              View Design</a
+            >
+          </div>
+        </div>
+        <div class="work-section">
+          <img src="images/hadean-plans.png" />
+          <div class="work-content">
+            <h3>Hadean</h3>
+            <p>
+              At Hadean, I managed website maintenance, updated templates and
+              themes, and developed new design plans for web pages. Working in
+              WordPress, I used ACF, PHP, HTML, CSS, and JavaScript to build
+              custom page templates aligned with my design concepts. The website
+              has since been updated however, attached are the design plans I
+              developed during that time.
+            </p>
+            <a
+              class="button"
+              href="images/design plans-compressed.pdf"
+              target="_blank"
+            >
+              View Design</a
+            >
+          </div>
+        </div>
+      </div>
     </section>
     <footer id="contact">
-        <div class="container">
-           <div class="footer-content">
-            <h2> Lets Work Together<span>.</span></h2>
-            <div class="socials">
-                <ul>
-                    <li> <a href="https://www.linkedin.com/in/sylvia-ifeoma-nwokoro-9ab893173/" target="_blank"> Linkedin</a></li>
-                    <li> <a href="tel:07759687674"> Phone</a></li>
-                    <li> <a href="mailto:nwokorosylvia88@gmail.com"> Email</a></li>
-                </ul>
-            </div>
-           </div>
+      <div class="container">
+        <div class="footer-content">
+          <h2>Lets Work Together<span>.</span></h2>
+          <div class="socials">
+            <ul>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/sylvia-ifeoma-nwokoro-9ab893173/"
+                  target="_blank"
+                >
+                  Linkedin</a
+                >
+              </li>
+              <li><a href="tel:07759687674"> Phone</a></li>
+              <li><a href="mailto:nwokorosylvia88@gmail.com"> Email</a></li>
+            </ul>
+          </div>
         </div>
+      </div>
     </footer>
-    </body>
-    </html>
+  </body>
+</html>
