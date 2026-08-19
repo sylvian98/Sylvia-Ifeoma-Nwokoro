@@ -1,6 +1,5 @@
 //Bootstrap 
-@import "~bootstrap/scss/bootstrap"; // the main Bootstrap file
-//global
+@import "../node_modules/bootstrap/scss/bootstrap";//global
 @import "global/home";
 @import "global/mixin";
 @import "global/variable";

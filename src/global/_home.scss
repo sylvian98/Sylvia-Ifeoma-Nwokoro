@@ -119,3 +119,20 @@
         }
     }
 }
+.graphic-grid{
+img{
+    max-width: 100% !important;
+}
+}
+.graphic-btn{
+    background-color: white;
+    color: $Blue;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    &:hover{
+        background-color: $Blue;
+        color: white;
+    }
+}
