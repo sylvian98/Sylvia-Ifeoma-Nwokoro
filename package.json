@@ -3,11 +3,11 @@
     "version": "1.0.0",
     "description": "My Portfolio displaying all the projects I have worked on ",
     "dependencies": {
-        "bootstrap": "^5.3.5",
+        "bootstrap": "^5.3.8",
         "gsap": "^3.12.7",
         "sass": "^1.87.0"
     },
     "scripts": {
-        "sass": "sass --watch src/style.scss"
+        "sass": "sass --load-path=node_modules --watch src/style.scss"
     }
 }
