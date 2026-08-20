@@ -8,9 +8,19 @@ html{
     color: $Blue;
     text-decoration: none;
     font-family: $Elza-Black;
+    display: block;
+    margin-bottom: 20px;
+    text-align: center;
+
+    @include media-screen(large-up){
+        display: inline-block;
+    }
     &:hover{
         background-color: $Blue;
         border: solid 2px $white;
         color: $white;
     }
+}
+video{
+    width:100%;
 }

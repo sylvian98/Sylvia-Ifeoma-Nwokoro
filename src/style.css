@@ -12138,6 +12138,14 @@ p {
   border-radius: 5px;
   text-decoration: none;
   font-weight: bold;
+  display: block;
+  margin-bottom: 20px;
+  text-align: center;
+}
+@media only screen and (min-width: 1200px) {
+  .graphic-btn {
+    display: inline-block;
+  }
 }
 .graphic-btn:hover {
   background-color: #7076F8;
@@ -12270,11 +12278,23 @@ html {
   color: #7076F8;
   text-decoration: none;
   font-family: "Elza";
+  display: block;
+  margin-bottom: 20px;
+  text-align: center;
+}
+@media only screen and (min-width: 1200px) {
+  .button {
+    display: inline-block;
+  }
 }
 .button:hover {
   background-color: #7076F8;
   border: solid 2px #fff;
   color: #fff;
+}
+
+video {
+  width: 100%;
 }
 
 footer {

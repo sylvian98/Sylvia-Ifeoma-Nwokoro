@@ -131,6 +131,12 @@ img{
     border-radius: 5px;
     text-decoration: none;
     font-weight: bold;
+    display: block;
+    margin-bottom: 20px;
+    text-align: center;
+    @include media-screen(large-up){
+        display: inline-block;
+    }
     &:hover{
         background-color: $Blue;
         color: white;
